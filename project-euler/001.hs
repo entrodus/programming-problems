@@ -8,7 +8,7 @@ isMultipleOfFive x = x `mod` 5 == 0
 isValidNumber :: Integer -> Bool
 isValidNumber x = isMultipleOfThree(x) || isMultipleOfFive(x)
 
-inputNumbers = [1..1000]
+inputNumbers = [1..999]
 
 applicableNumbers = filter isValidNumber inputNumbers
 
